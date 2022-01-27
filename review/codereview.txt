@@ -1,0 +1,69 @@
+Code review: 
+heores-hall-of-fame.js:
+Linjka 18: 
+ten kod niczego nie zmienia. Można to zmienić na this.#powerCount++;
+
+Linijka 22 (mocno naciągane):
+niepotrzebne komplikowanie kodu. Zamiast tego wystarczy użyć "heroes.length"
+
+Linijka 32: 
+wywołanie funkcji przed jej stworzeniem.
+
+Linijki 34-36: 
+nazwa funkcji: po pierwsze, Hero powinno być z dużej litery. Po drugie, funkcja tworzy bohatera, więc "getHero" kiepsko
+ją określa. "createHero" byłoby lepsze.
+Funkcja powinna przyjmować też argument, np. "name".
+Poza tym, funkcja niczego nie zwraca, na końcu powinno się dodać "return hero".
+
+Linijka 39 (mocno naciągane):
+nazwa funkcji powinna przestrzegać camelCase, tzn. powinna brzmieć printHallOfFame
+
+Linijki 40, 41:
+"spider" powinno być w cudzysłowie. Poza tym nie wiem dlaczego ten kod jest w tej funkcji,
+a nie tam gdzie tworzymy pozostałych bohaterów.
+
+Linijka 43:
+"div", a nie "#div"
+
+Linijka 45 (mocno naciągane):
+nie potrzebne deklarowanie "i" i "arr". Poza tym "x" nie jest zbyt opisowe, można użyć np. 
+"hero" zamiast "x".
+
+Linijka 47:
+[name] niepotrzebnie w nawiasach klamrowych. "x" to cały obiekt "Hero", jeśli chcemy jego nazwę
+musimy użyć "x.name".
+
+Linijka 49:
+dwa razy zamknięte </p>
+
+
+index.html:
+
+Linijka 13:
+HTML nie wie co to "bg-color". Należy użyć "--bg-color" zamiast tego
+
+Linijka 14:
+nie ma takiej czcionki domyślnie w HTML, trzeba ją pobrać z google fonts.
+
+Linijka 29 (mocno naciągane):
+nie ma czegoś takiego (a przynajmniej nigdzie tego nie znalazłem) jak aria-main="true". 
+Niczego to też nie zmienia w kodzie, więc można to usunąć.
+
+Linijka 30:
+"class" zamiast "className".
+
+Linijka 31:
+{heroCount} to zwykły tekst i będzie się też tak wyświetlał. Aby wyświetlić tam rzeczywisty
+"licznik bohaterów" można np. dodać tam "span" z id, a następnie zmienić go w JS.
+
+Linijka 32:
+"div" ma podwójny znak ">" zamiast pojedynczego. 
+
+Linijka 33. 
+onclick nie działa. W onlick należałoby wpisać nazwę samej funkcji, jednak nawet gdyby to zrobić to mielibyśmy
+tylko jeden button dla wszystkich bohaterów. Aby móc trenować
+osobno każdego bohatera należy dodać oddzielny button dla każdego z nich w JS. 
+
+Linijka 45.
+Script bez dodania src, a więc JS nie będzie działać.
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Poczta Polska</title>
+  </head>
+  <body>
+    <h1>ENVELO</h1>
+    <h3>Możesz mieć swoją przesyłkę w kilkanaście sekund.</h3>
+    <h3>Rozpocznij klikając w przycisk</h3>
+    <div class="phoneAndCode">
+      <div style="margin-right: 5px">
+        <p>Numer telefonu:</p>
+        <input id="phoneNumber" type="number" />
+      </div>
+      <div style="margin-left: 5px">
+        <p>Kod odbioru:</p>
+        <input id="code" type="number" />
+      </div>
+    </div>
+
+    <button id="myButton">Odbierz paczkę</button>
+    <div class="loader"></div>
+
+    <!-- Modal content -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Paczka odebrana!</h2>
+        <h3>
+          Zrobiłeś to w czasie <span id="seconds"></span> sekund! Czy możemy
+          zrobić dla Ciebie coś jeszcze?
+        </h3>
+        <button id="stepZero">To wszystko na dziś</button>
+        <button id="stepOne">Odbierz kolejną paczkę</button>
+      </div>
+    </div>
+    <!-- Modal -->
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
