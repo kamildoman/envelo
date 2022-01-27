@@ -23,10 +23,10 @@ Linijki 40, 41:
 a nie tam gdzie tworzymy pozostałych bohaterów.
 
 Linijka 43:
-"div", a nie "#div"
+"div", a nie "#div" - to nie id.
 
 Linijka 45 (mocno naciągane):
-nie potrzebne deklarowanie "i" i "arr". Poza tym "x" nie jest zbyt opisowe, można użyć np. 
+niepotrzebne deklarowanie "i" i "arr". Poza tym "x" nie jest zbyt opisowe, można użyć np. 
 "hero" zamiast "x".
 
 Linijka 47:
@@ -47,7 +47,7 @@ nie ma takiej czcionki domyślnie w HTML, trzeba ją pobrać z google fonts.
 
 Linijka 29 (mocno naciągane):
 nie ma czegoś takiego (a przynajmniej nigdzie tego nie znalazłem) jak aria-main="true". 
-Niczego to też nie zmienia w kodzie, więc można to usunąć.
+Niczego to też nie zmienia w wyglądzie, więc można to usunąć.
 
 Linijka 30:
 "class" zamiast "className".
